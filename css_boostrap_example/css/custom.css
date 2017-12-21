@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background-image: url(../images/bgd1.jpg);
+	background-size:cover;
+	min-height: 100%;
+}
+
+#sidebar {
+	position: fixed;
+	bottom: 35%;
+	right: 5px;	
+	width: 50px;
+}
+
+.sidebar-img {
+	margin-left: auto;
+	display: block;
+	height: 50px;
+	width: 50px;
+}
+
+.carousel-img {
+	margin: auto;
+	width: 100%;
+}
+
+.col-md-11 {
+	min-height: 1080px;
+}
+
+#slider-h3 {
+	text-shadow: 0px 2px #000;
+	color:#CCC;
+}
+
+#container-border {
+	background-color: #FFF;
+}
+
+#footer {
+	background-color:#000;
+	color:#CCC;
+	bottom: 0px;
+	margin-top: 20px;
+	width: 100%;
+}
+
+#footer-img {
+	display: block;
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;	
+}
+
+#opa-div {
+	background-color: rgba(204,204,204,0.4);
+}
+
+.gallery-img {
+	cursor: pointer;
+	width: 100%;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	opacity: 0.8;
+	-moz-transition: all 0.9s;
+  	-webkit-transition: all 0.9s;
+  	transition: all 0.9s;
+}
+
+.gallery-img:hover {
+	opacity: 1.0;
+	-moz-transform: scale(1.03);
+  	-webkit-transform: scale(1.03);
+  	transform: scale(1.03);
+}
+	
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.modal-content, #caption { 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: fixed;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}

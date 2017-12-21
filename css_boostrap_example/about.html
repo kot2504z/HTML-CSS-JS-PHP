@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>RedSlider</title>
+    <!-- website icon -->
+    <link rel="shortcut icon" href="favicon.ico" >
+    <!-- external styles -->
+    <styles><link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <styles><link rel="stylesheet" type="text/css" href="css/custom.css" />
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<ul class="nav navbar-nav">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">RedSlider</a>
+				</div>
+				<li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Main Page</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="active"><a href="about.html">About</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+                <li>
+                	<a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+                </li>
+                <li class="dropdown">
+                	<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    Login<span class="glyphicon glyphicon-log-in"></span></a>
+                    <ul class="dropdown-menu" style="width:250px; background-color:#333;">
+                        <li style="text-align:center;">
+                            <form>
+                                <div class="input-group" style="width:90%; margin-bottom:5px; margin-left:auto; 
+                                margin-right:auto;">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                    <input id="email" type="text" class="form-control" name="email" 
+                                    placeholder="Username" onkeyup="input();">
+                                </div>
+                                <div class="input-group" style="width:90%; margin-bottom:5px; margin-left:auto; 
+                                margin-right:auto;">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                    <input id="password" type="password" class="form-control" name="password"
+                                    placeholder="Password" onkeyup="input();">
+                                </div>                            
+                             </form>                        
+                             <button type="button" class="btn btn-default" disabled="disabled" 
+                             style="width:90%; margin:auto; margin-bottom:5px;" id="change">Login</button>
+                        </li>
+                    </ul>
+				</li>
+			</ul>
+		</div>
+	</nav>    
+    <div class="col-md-11">
+    	<div class="container" style="background-color: rgba(222,222,222,0.8);">
+        	<h1 align="center">Nazywam się Błąd. Janusz Błąd.</h1>
+            <h3 align="center">Tu się uczę</h3>
+            <img src="images/map.png" alt="mapa" style="width:100%; display:block; margin: auto;" />
+            <h2 align="center">Jesteś kobietą? Chcesz się spotkać? ;) <br/> Zostaw wiadomość, odezwę się. ;)</h2>
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Adres e-mail</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Twój e-mail">
+                <small id="emailHelp" class="form-text text-muted">Zostawie sobie twój e-mail na pamiątke <3.</small>
+              </div>
+
+              <div class="form-group">
+                <label for="exampleTextarea">Napisz mi coś ładnego ;></label>
+                <textarea class="form-control" placeholder="Np. ile pieniążków jesteś w stanie wydać na pierwszej randce" id="exampleTextarea" rows="3"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputFile"><h5><b>Jeszcze tylko twoje zdjęcie.</b></h5><h5 style="text-decoration:line-through;"><b>może być nagie ;)</b></h5></label>
+                <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                <small id="fileHelp" class="form-text text-muted">Jak zobacze to ocenie i się odezwę.</small>
+              </div>         
+              <button type="submit" class="btn btn-primary" style="margin-bottom:10px">Wyślij ;></button>
+            </form>
+        </div>
+    </div>
+    <div class="col-md-1">
+        <div id="sidebar">
+            <a target="_blank" href="https://www.facebook.com/kot2504z">
+            <img id="fb" onmouseover="mouse_over_fb()" onmouseout="mouse_out_fb()" 
+            src="images/sm/facebook-gay.jpg" alt="facebook" class="sidebar-img"/></a>
+            <a target="_blank" href="https://www.youtube.com/channel/UCPbn1qlpl7xajP51BaYvszA">
+            <img id="yt" onmouseover="mouse_over_yt()" onmouseout="mouse_out_yt()"
+            src="images/sm/youtube-gay.jpg" alt="youtube" class="sidebar-img"/></a>
+            <a target="_blank" href="https://www.snapchat.com/">
+            <img id="sc" onmouseover="mouse_over_sc()" onmouseout="mouse_out_sc()"
+            src="images/sm/snapchat-gay.jpg" alt="snapchat" class="sidebar-img"/></a>
+            <a target="_blank" href="https://www.instagram.com/kot2504z/">
+            <img id="ig" onmouseover="mouse_over_ig()" onmouseout="mouse_out_ig()"
+            src="images/sm/instagram-gay.jpg" alt="instagram" class="sidebar-img"/></a>
+            <a target="_blank" href="https://twitter.com/SawomirKotowski">
+            <img id="tt" onmouseover="mouse_over_tt()" onmouseout="mouse_out_tt()"
+            src="images/sm/twitter-gay.jpg" alt="twitter" class="sidebar-img"/></a>
+        </div>
+    </div>
+    <div class="col-md-12" id="footer">
+    	<audio autoplay="autoplay">
+        	<source src="sounds/stulejarnosc.mp3" type="audio/mp3" />
+        </audio>
+    	<div class="col-md-3">
+        	<img src="images/bootstrap.png" alt="wordpress" id="footer-img"/>
+        </div>
+        <div class="col-md-6">
+        	<h3 align="center">
+        	© 2017 Sławomir Kotowski. Open Source.
+             </h3>
+        </div>
+        <div class="col-md-3">
+        	<img src="images/wordpress.png" alt="wordpress" id="footer-img"/>
+        </div>
+    </div>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Custom Scripts -->
+<script src="js/custom.js"></script>
+
+</body>
+</html>
+
